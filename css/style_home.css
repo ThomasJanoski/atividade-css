@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    background-image:url(../assets/Background.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.8;
+    margin: 0;
+    position: fixed;
+    z-index: 0;
+
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+#menu a {
+    color:white;
+    text-decoration: none;
+    font-family:  "Noto Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+    text-align: center;
+    padding: 0 0.4cm;
+    font-size: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 2px solid #6c6c6c;
+    box-shadow: 1px 1px 2px #3b3b3b;
+}
+
+#menu a:hover {
+    font-size: 22px;
+    border-bottom-left-radius: 15px ; /*arredondar canto abaixo*/
+    border-bottom-right-radius: 15px;
+    border-bottom: 0.1px solid #494747;
+}
+
+#logo img {
+    max-width: 60px; /* Tamanho máximo do logo */
+    height: 60px; /* Mantém a proporção da imagem */
+}
+
+#logo img:hover {
+    box-shadow: 2px 2px 4px #bebebe 
+}
+#header {
+    box-sizing: border-box;
+    height: 80px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6e6e6e;
+    box-shadow: 3px 3px 6px #343434;
+
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.8rem; /* unidade de medida relativa que varia de acordo com a dimensão do navegador ou dispositivo, por padrão, 1 rem = 16px*/
+/* gap >define o espaçamento entre linhas e colunas de um flexbox*/
+z-index: 5;
+}
+#btn-mobile {
+    display: none;
+
+}
